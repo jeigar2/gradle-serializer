@@ -14,4 +14,9 @@ public class Librarian extends User {
     public void addBook(Library library, Book book){
         library.addBook(book);
     }
+
+    @Override
+    public String toString() {
+        return "Librarian{name=" + super.getName() + "}";
+    }
 }

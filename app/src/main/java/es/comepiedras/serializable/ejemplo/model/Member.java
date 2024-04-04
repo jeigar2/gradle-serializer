@@ -10,4 +10,9 @@ public class Member extends User {
     public void requestBook(Library library, int bookId) {
         library.lendBook(this, bookId);
     }
+
+    @Override
+    public String toString() {
+        return "Member{name=" + super.getName() + "}";
+    }
 }

@@ -2,6 +2,9 @@ package es.comepiedras.serializable.ejemplo.model;
 
 import java.util.HashMap;
 
+/**
+ *
+ */
 public class Library {
     private HashMap<Integer, Book> books = new HashMap<>();
 
@@ -17,5 +20,12 @@ public class Library {
         } else {
             System.out.println("The book " + book.getTitle() + " is not available");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "books=" + books +
+                '}';
     }
 }

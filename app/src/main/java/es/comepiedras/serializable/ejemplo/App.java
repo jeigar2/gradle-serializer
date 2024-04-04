@@ -27,6 +27,10 @@ public class App {
         member.requestBook(library, book2.getId());
         member.requestBook(library, book2.getId());
 
+        System.out.println(librarian);
+        System.out.println(member);
+        System.out.println(library);
+
         try (FileOutputStream fos = new FileOutputStream("/home/igg/file-serializado.txt")){
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(book3);
